@@ -1,0 +1,10 @@
+GELUID TOEVOEGEN (makkelijkst):
+1. Pak je mp3 en hernoem hem naar:  geluid.mp3
+2. Zet hem in dezelfde map als index.html
+3. Klaar. De knop "Druk hier!" bovenaan speelt hem af.
+
+FOTO'S TOEVOEGEN:
+Zet je foto's in de map "fotos". Vervang in index.html een blok
+<div class="ph">...</div> door:  <img src="fotos/jouwfoto.jpg" alt="">
+
+Open index.html om de site te zien.

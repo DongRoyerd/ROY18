@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Roy wordt 18!</title>
+<link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Caveat:wght@600&family=Noto+Serif+SC:wght@600;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="hero">
+  <!-- Lantaarns: 福 = geluk, 十八 = achttien, 喜 = vreugde/blijheid -->
+  <div class="lanterns">
+    <div class="lantern"><i></i><b>福</b><u></u></div>
+    <div class="lantern"><i></i><b>十八</b><u></u></div>
+    <div class="lantern"><i></i><b>喜</b><u></u></div>
+  </div>
+  <div class="big">18</div>
+  <h1>Roy wordt 18!</h1>
+  <!-- 生日快乐 = gefeliciteerd met je verjaardag, 十八岁 = 18 jaar oud -->
+  <p class="zh">生日快乐 · 十八岁</p>
+  <!-- 龙 = draak (stempeltje) -->
+  <span class="seal">龙 Roy</span>
+  <!-- GELUIDSKNOP: zet je mp3 in dezelfde map als index.html en noem hem geluid.mp3 -->
+  <div><button class="sound" id="soundBtn" type="button">🔔 Druk hier!</button></div>
+  <audio id="snd" src="geluid.mp3" preload="auto"></audio>
+</section>
+
+<div class="divider"></div>
+
+<section>
+  <div class="card">
+    <h2>Welkom</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+</section>
+
+<!-- 薯条 = patat, 炸鸡 = gebakken kip -->
+<div class="bigpics">
+  <svg class="bigpic" style="--r:-6deg" viewBox="0 0 200 230" role="img" aria-label="Patat">
+    <g fill="#f6c935" stroke="#c9941a" stroke-width="3" stroke-linejoin="round">
+      <rect x="45" y="20" width="22" height="120" rx="4" transform="rotate(-14 56 140)"/>
+      <rect x="72" y="4" width="22" height="140" rx="4" transform="rotate(-6 83 140)"/>
+      <rect x="100" y="14" width="22" height="130" rx="4"/>
+      <rect x="128" y="2" width="22" height="142" rx="4" transform="rotate(7 139 140)"/>
+      <rect x="150" y="24" width="22" height="120" rx="4" transform="rotate(15 161 140)"/>
+    </g>
+    <path d="M34 120 H166 L152 222 H48 Z" fill="#d6141c" stroke="#7d0b12" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M34 120 H166 L162 146 H38 Z" fill="#e8b84a"/>
+    <text x="100" y="196" text-anchor="middle" font-size="36" fill="#fff7e6" font-family="Ma Shan Zheng,serif">薯条</text>
+  </svg>
+  <svg class="bigpic" style="--r:6deg" viewBox="0 0 200 230" role="img" aria-label="Kip">
+    <g transform="rotate(-30 100 115)" stroke-linejoin="round">
+      <rect x="91" y="120" width="18" height="80" rx="6" fill="#fff7e6" stroke="#c9a66b" stroke-width="4"/>
+      <circle cx="87" cy="204" r="12" fill="#fff7e6" stroke="#c9a66b" stroke-width="4"/>
+      <circle cx="113" cy="204" r="12" fill="#fff7e6" stroke="#c9a66b" stroke-width="4"/>
+      <ellipse cx="100" cy="80" rx="58" ry="68" fill="#d9822b" stroke="#8a4a12" stroke-width="5"/>
+      <ellipse cx="82" cy="58" rx="26" ry="32" fill="#eea34a" opacity=".8"/>
+      <g fill="#a9591a"><circle cx="120" cy="60" r="4"/><circle cx="108" cy="95" r="4"/><circle cx="80" cy="100" r="4"/><circle cx="130" cy="90" r="3"/><circle cx="95" cy="40" r="3"/></g>
+    </g>
+  </svg>
+</div>
+
+<section>
+  <h2 class="title">Foto’s van Roy</h2>
+  <!-- 回忆 = herinneringen -->
+  <div class="zh">回忆</div>
+  <div class="board" id="board">
+    <!-- 照 = foto (staat in de lege vakjes als plaatshouder) -->
+    <!-- Vervang elk .ph-blok door: <img src="jouw-foto.jpg" alt=""> -->
+    <figure class="photo"><div class="ph"><b>照</b>Klik om foto te kiezen</div><figcaption>Lorem ipsum</figcaption></figure>
+    <figure class="photo"><div class="ph"><b>照</b>Klik om foto te kiezen</div><figcaption>Dolor sit amet</figcaption></figure>
+    <figure class="photo"><div class="ph"><b>照</b>Klik om foto te kiezen</div><figcaption>Consectetur</figcaption></figure>
+    <figure class="photo"><div class="ph"><b>照</b>Klik om foto te kiezen</div><figcaption>Adipiscing elit</figcaption></figure>
+    <figure class="photo"><div class="ph"><b>照</b>Klik om foto te kiezen</div><figcaption>Sed do eiusmod</figcaption></figure>
+    <figure class="photo"><div class="ph"><b>照</b>Klik om foto te kiezen</div><figcaption>Tempor</figcaption></figure>
+  </div>
+  <p class="hint">Foto’s kiezen is alleen een voorbeeld op je eigen scherm. Stuur me de foto’s en ik zet ze er vast in.</p>
+</section>
+
+<section>
+  <h2 class="title">Speel een deuntje</h2>
+  <!-- 钢琴 = piano -->
+  <div class="zh">钢琴</div>
+  <div class="piano" id="piano"></div>
+  <p class="hint">Tik of klik op de toetsen.</p>
+</section>
+
+<section>
+  <h2 class="title">Wensen</h2>
+  <!-- 祝福 = zegenwensen / beste wensen -->
+  <div class="zh">祝福</div>
+  <div class="wishes">
+    <div class="scroll"><strong>Lorem</strong><br>Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+    <div class="scroll"><strong>Ipsum</strong><br>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</div>
+    <div class="scroll"><strong>Dolor</strong><br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</div>
+  </div>
+</section>
+
+<div class="divider"></div>
+<footer><!-- 万事如意 = mogen al je wensen uitkomen, 十八岁快乐 = fijne 18e -->
+<p class="zh">万事如意 · 十八岁快乐</p><p>Gefeliciteerd, Roy!</p></footer>
+
+<script src="script.js"></script>
+</body>
+</html>
