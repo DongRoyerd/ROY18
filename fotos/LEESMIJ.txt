@@ -1,1 +1,0 @@
-Zet hier de foto's van Roy in en vervang in index.html elk <div class="ph">...</div> blok door <img src="fotos/jouwfoto.jpg" alt="">
