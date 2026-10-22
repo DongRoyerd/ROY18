@@ -1,13 +1,20 @@
-document.querySelectorAll('.ph').forEach(function(ph){
-  var inp=document.createElement('input');inp.type='file';inp.accept='image/*';inp.hidden=true;
-  ph.after(inp);
-  ph.addEventListener('click',function(){inp.click()});
-  inp.addEventListener('change',function(){
-    var f=inp.files[0];if(!f)return;
-    var img=document.createElement('img');img.alt='';img.src=URL.createObjectURL(f);
-    ph.innerHTML='';ph.appendChild(img);
+// Foto's laden: fotos/roy1 t/m fotos/roy18, de extensie wordt automatisch gevonden
+(function(){
+  var exts=['jpg','jpeg','png','webp','JPG','JPEG','PNG','WEBP'];
+  document.querySelectorAll('img[data-n]').forEach(function(img){
+    var n=img.getAttribute('data-n'),i=0;
+    function next(){
+      if(i>=exts.length){
+        img.onerror=null;
+        img.parentNode.innerHTML='<b>照</b>roy'+n;
+        return;
+      }
+      img.src='fotos/roy'+n+'.'+exts[i++];
+    }
+    img.onerror=next;
+    next();
   });
-});
+})();
 
 // Geluidsknop
 (function(){
